@@ -34,6 +34,10 @@ def go(args):
     dt_cols = 'last_review'
     df[dt_cols] = pd.to_datetime(df[dt_cols])
     logger.info(f"Convert column {dt_cols} to datetime datatype succeed.")
+    logger.info("Clean longitude and latitude...")
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
+    logger.info("Clean data completely, save cleaned data...")
 
     df.to_csv("clean_sample.csv", index=False)
     # Save result to WanDB
