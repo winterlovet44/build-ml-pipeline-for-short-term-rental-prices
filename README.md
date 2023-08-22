@@ -5,6 +5,7 @@ on the price of similar properties. Your company receives new data in bulk every
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
 In this project you will build such a pipeline.
+
 Link of WanDB workspace: [W&B workspace](https://wandb.ai/udacitymlops1/nyc_airbnb?workspace=user-haupham)
 
 ## Table of contents
